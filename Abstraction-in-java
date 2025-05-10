@@ -1,1 +1,62 @@
+package Abstraction;
+
+abstract class bike {
+	abstract void tvs(); 
+
+	void suzuki() {
+		System.out.println("these are 20's model bikes");
+	}
+}
+
+abstract class midmodel extends bike {
+	abstract void royalenflied();
+
+	abstract void honda();
+
+	void herohonda() {
+		System.out.println("these are petrol bike");
+	}
+}
+
+class advmodel extends midmodel { 
+									
+	void ktm() {
+		System.out.println("ktm is the super fast bike");
+	}
+
+	void mt() {
+		System.out.println("mt bike model contain 3 colors");
+	}
+
+	void royalenflied() {
+		System.out.println("royalenflied bikes are in both model");
+
+	}
+
+	void honda() {
+		System.out.println("honda bikes model contain electric bikes");
+
+	}
+
+	void tvs() {
+
+		System.out.println("these model are good in condition");
+	}
+
+}
+
+public class Abstarct {
+
+	public static void main(String[] args) {
+		advmodel a1 = new advmodel(); 
+		a1.suzuki();
+		a1.royalenflied();
+		a1.honda();
+		a1.herohonda();
+		a1.ktm();
+		a1.mt();
+
+	}
+
+}
 
